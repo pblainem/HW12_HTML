@@ -1,0 +1,6 @@
+To-Do
+
+margin around figure in summary
+dropdown
+get fancier font
+adjust such that re-sizing has desired affect
