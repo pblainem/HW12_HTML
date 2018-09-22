@@ -5,35 +5,95 @@
         <meta charset="UTF-8">
         <title>comparison</title>
         <script type="text/javascript" src="Scripts/jquery-2.1.1.min.js"></script>
-        <script type="text/javascript" src="Scripts/bootstrap.min.js"></script>        <script type="text/javascript" src="js/bootstrap/bootstrap-dropdown.js"></script>
-        <!-- <script>
-            $(document).ready(function(){
-            $('.dropdown-toggle').dropdown()
-            });
-        </script> -->
+        <script type="text/javascript" src="Scripts/bootstrap.min.js"></script>        
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <script type="text/javascript" src="js/bootstrap/bootstrap-dropdown.js"></script>
+        <script>
+             $(document).ready(function(){
+                $('.dropdown-toggle').dropdown()
+            });
+        </script>
+        
         <link rel="stylesheet" type="text/css" href="style.css">
 	</head>	
     <header>
-        <div class="container">
-            <nav class="navbar nav">
+        <div class="container nav_container">
+            <nav class="navbar nav responsive">
+                <!-- <select id="selDataset" onchange="getData(this.value)">
+                    <option value="plots_id">PLOTS</option>
+                    <option value="plot1_id">Plot 1</option>
+                    <option value="plot2_id">Plot 2</option>
+                    <option value="plot3_id">Plot 3</option>
+                </select> -->
                 
-                <div class="dropdown">
-                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                            Plots
-                            <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <li><a href="#">Link to Maxxx Temperature Plot Page</a></li>
-                            <li><a href="#">Link to Humidity Plot Page</a></li>
-                            <li><a href="#">Cloudiness</a></li>
-                            <li><a href="#">Wind Speed</a></li>
-                        </ul>
+                <!-- <script src="{{ url_for('static', filename='js/app.js') }}"></script> -->
+                    
+
+                <!-- <select id="city1" onchange="optionChanged(this.value)"></select> -->
+
+                <!-- <ul class='nav'>
+                        <li class='active'>Home</li>
+                        <li>
+                            <div class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Personal asset loans</a>
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">            
+                                    <li><a href="#">asds</a></li>
+                                    <li class="divider"></li>
+                                </ul>
+                            </div>   
+                        </li>
+                            <li>Payday loans</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                </ul> -->
+                
+                
+                <!-- <div class="dropdown show">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown link
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div> -->
+                
+                
+                
+                <!-- <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Action <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div> -->
+                
 
 
-                </div>
+
+                <!-- <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Plots
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="#">Link to Maxxx Temperature Plot Page</a></li>
+                        <li><a href="#">Link to Humidity Plot Page</a></li>
+                        <li><a href="#">Cloudiness</a></li>
+                        <li><a href="C:\Users\mckin\Desktop\repos\HW12_HTML\wind.html">Wind Speed</a></li>
+                    </ul>
+                </div> -->
+
+
  
-                <div class="dropdown">
+                <!-- <div class="dropdown">
                     <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                         Dropdown
                         <span class="caret"></span>
@@ -45,7 +105,7 @@
                         <li role="separator" class="divider"></li>
                         <li><a href="#">Separated link</a></li>
                     </ul>
-                </div>
+                </div> -->
 
 
 
@@ -64,7 +124,7 @@
                         <a href="#" class = "pull-right">Cloudiness</a>
                     </li>
                     <li>
-                        <a href="#" class = "pull-right">Wind Speed</a>
+                        <a href="C:\Users\mckin\Desktop\repos\HW12_HTML\wind.html" class = "pull-right">Wind Speed</a>
                     </li>
                     <li>
                         <a href="C:\Users\mckin\Desktop\repos\HW12_HTML\data.html" class = "pull-right">Data</a>
@@ -80,21 +140,29 @@
             <div class="row compare">
                 <div class="col-md-6">
                     <h2>vs. Max Temperature</h2>
-                    <img src = "C:\Users\mckin\Desktop\repos\HW12_HTML\images\tempFig.png" alt="Image of temperature graph" class="graph_images">
+                    <a href="C:\Users\mckin\Desktop\repos\HW12_HTML\max_temp.html">
+                        <img src = "C:\Users\mckin\Desktop\repos\HW12_HTML\images\tempFig.png" alt="Image of temperature graph" class="graph_images">
+                    </a>
                 </div>
                 <div class="col-md-6">
                     <h2>vs. Humidity</h2>
-                    <img src = "C:\Users\mckin\Desktop\repos\HW12_HTML\images\humidityFig.png" alt="Image of temperature graph" class="graph_images">
+                    <a href="C:\Users\mckin\Desktop\repos\HW12_HTML\humidity.html">
+                        <img src = "C:\Users\mckin\Desktop\repos\HW12_HTML\images\humidityFig.png" alt="Image of temperature graph" class="graph_images">
+                    </a>
                 </div>
             </div>
             <div class="row compare">
                     <div class="col-md-6">
                         <h2>vs. Cloudiness</h2>
-                        <img src = "C:\Users\mckin\Desktop\repos\HW12_HTML\images\cloudFig.png" alt="Image of temperature graph" class="graph_images">
+                        <a href="C:\Users\mckin\Desktop\repos\HW12_HTML\cloud.html">
+                            <img src = "C:\Users\mckin\Desktop\repos\HW12_HTML\images\cloudFig.png" alt="Image of temperature graph" class="graph_images">
+                        </a>
                     </div>
                     <div class="col-md-6">
                         <h2>vs. Wind Speed</h2>
-                        <img src = "C:\Users\mckin\Desktop\repos\HW12_HTML\images\windFig.png" alt="Image of temperature graph" class="graph_images">
+                        <a href="C:\Users\mckin\Desktop\repos\HW12_HTML\wind.html">
+                            <img src = "C:\Users\mckin\Desktop\repos\HW12_HTML\images\windFig.png" alt="Image of temperature graph" class="graph_images">
+                        </a>
                     </div>
                 </div>
         </div>

@@ -1,0 +1,4 @@
+ - How to remove the margin from the bottom of what appears to be <nav class="navbar nav">
+	 - There is whitespace under the "Latitude" button I would like to get rid of.
+ - How do I use a dropdown for the other buttons (I can't get a dropdown to function at all)
+ - How to get the buttons to display in-line (this would be in the media query, where I would also float the buttons left.)

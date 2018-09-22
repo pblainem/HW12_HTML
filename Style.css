@@ -5,39 +5,44 @@ header {
     font-family: sans-serif, serif;
 }
 
+
 .navbar li {	
 	display: inline_block;
     cursor: pointer;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 	background: #fff;
     border-radius: 3px;
     float: right;
-    border-color: black;
-    float: right;
-    color: black;
-}	
+}
+
+.nav.navbar.nav{
+    margin-bottom: 0px;
+    
+}
 
 .nav-pills{
     font-size:1em;
-    background-color:black;
-  }
+    font-weight:bold;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    /* margin-bottom:0px; */
+
+}
 
 #home-link{
-    margin-top: 20px;
+    /* margin-top: 20px; */
     padding: 10px;
 	margin-right: 10px;
     margin-left: 10px;
-    margin-bottom: 1px;
 	cursor: pointer;
-    border-radius: 3px;
-    float: right;
+    /* border-radius: 3px; */
     border: 1px;
-    border-color: black;
     float: left;
     font-size:1em;
     opacity: 0.9;
     color:white;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight:bold;
+    font-family: 'Times New Roman', Times, serif;
     background: rgba(5, 71, 59, 1);
 }
 
@@ -45,22 +50,18 @@ body{
     background-color: #CCC;
 }
 
-a{
+.nav-pills li a{
     padding: 10px;
 	margin-right: 10px;
     margin-left: 10px;
-    margin-top: 1px;
-    margin-bottom: 1px;
 	cursor: pointer;
-    border-radius: 1px;
+    border-radius: 5px;
     float: right;
-    border: 1px;
-    border-color: black;
     font-size:1em;
     opacity: 0.9;
-    color:white;
-    font-family: Arial, Helvetica, sans-serif;
-    background: rgba(5, 71, 59, 1);    
+    color: rgba(5, 71, 59, 1);
+    /* font-family: Arial, Helvetica, sans-serif; */
+    /* background: rgba(5, 71, 59, 1);     */
 }
 
 #summary{
@@ -69,8 +70,8 @@ a{
     border-radius: 1px;
     float:left;
     width: 100%;
-    height: 400px;
-    margin: 20px;
+    /* height: 400px; */
+    margin-top: 20px;
 
 
 }
@@ -78,52 +79,60 @@ a{
 
 #viz{
     background-color: white;
-    position: absolute;
+    position: relative;
     padding: 10px;
     border-radius: 1px;
-    float:right;
-    width: 80%;
-    height: 700px;
+    width: 100%;
+    height: 100%;
     margin-top: 20px;
+    /* background: url("../images/greybox-center-bg1.jpg") repeat-x scroll center top transparent; */
+    float: left;
+    min-height: 200px;
+    /* width: 260px; */
 
 }
 
-/* .container{
+.nav_container{
     margin-top: 10px;
-} */
+    /* margi */
+}
 
-#sampleimage{
+#summaryImg{
     position: relative;
-    margin: 1px;
-    margin-top: 90px;
-    top: 20%;
-    height: 100px;
+    margin: 10px;
+    /* margin-top: 90px; */
+    /* top: 10%; */
+    height: 120px;
     float: left;
     shape-outside: border-box;
-    border: 50px;
-    border-color: slateblue;
-    shape-outside: circle(40%);
+    /* border: 10px; */
+    /* shape-outside: circle(80%); */
 }
 
 #top-row{
     /* background-color: purple; */
     width: 100%;
-    height: 200px;
+    height: 150px;
+    margin-top: 30px;
 }
 
 #bottom-row{
     /* background-color: black; */
     width: 100%;
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 .col-sm-6 img{
-    width: 95%;
-    position: absolute;
+    width: 100%;
+    /* position: absolute; */
 }
 
 .graph_images{
     width: 100%;
 }
+
+
 
 .body_container{
     background-color: white;
@@ -160,15 +169,30 @@ h3 {
     font-weight:bold;
 }
 
-#tempSum {
+#img_sum {
+    /* position: absolute; */
     background:white;
+    width: 100%;
 
 }
 
-#tempSum p{
-    margin:10px;
-    padding: 10px;
+#img_sum p{
+    padding-bottom:20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* padding: 10px; */
 }
+
+
+
+#main_graph{
+    display: block;
+    position: relative;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 th{
     text-align: center;
@@ -182,7 +206,48 @@ table{
 .data_container{
     background-color: white;
     /* position: absolute; */
-    padding: 40px;
+    /* padding: 40px; */
     width: 70%;
     margin-top: 20px;
+}
+
+#selDataset{
+    /* background-color: blue; */
+    color: black;
+
+}
+
+
+h1{
+    /* background-color: */
+    /* color: rgba(5, 71, 59, 1); */
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:bold;
+
+}
+
+@media (max-width:1000px){
+    h1{
+        color: yellow;
+    }
+
+    #img_sum p{
+        /* padding-bottom:2px;
+        padding-left: 2px;
+        padding-right: 2px; */
+        background-color: brown;
+        /* padding: 10px; */
+    }
+    
+    ul {
+        list-style: none outside none;
+        display: flow-root;
+    }
+    li {
+        line-height: 18px;
+        margin-bottom: 12px;
+        display: flow-root;
+    }
+
+
 }

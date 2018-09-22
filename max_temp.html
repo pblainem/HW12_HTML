@@ -8,7 +8,7 @@
         <link rel="stylesheet" type="text/css" href="style.css">
 	</head>	
     <header>
-        <div class="container">
+        <div class="container nav_container">
             <nav class="navbar nav">
                 <a href="file:///C:/Users/mckin/Desktop/repos/HW12_HTML/index.html" id = "home-link">Latitude</a>    
                 <ul class="nav-pills">
@@ -22,7 +22,7 @@
                         <a href="#" class = "pull-right">Cloudiness</a>
                     </li>
                     <li>
-                        <a href="#" class = "pull-right">Wind Speed</a>
+                        <a href="C:\Users\mckin\Desktop\repos\HW12_HTML\wind.html" class = "pull-right">Wind Speed</a>
                     </li>
                     <li>
                         <a href="file:///C:/Users/mckin/Desktop/repos/HW12_HTML/comparison.html#" class = "pull-right">Comparisons</a>
@@ -37,37 +37,42 @@
 	<body>
         <div class="container">
             <div class="row">
-                <div class="col-md-8">
-                    <div id="tempSum">
+                <div class="col-md-7">
+                    <div id="img_sum">
                         <h2>Max Temperature</h2>
                         <br>
-                        <img src = "C:\Users\mckin\Desktop\repos\HW12_HTML\images\tempFig.png" alt="Image of temperature graph" id="max_temp">
+                        <img src = "C:\Users\mckin\Desktop\repos\HW12_HTML\images\tempFig.png" alt="Image of temperature graph" id="main_graph">
                         <br>
-                        <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 5000 cities</p>
+                        <p>Currently, since it's Summer in the Northern Hemisphere, we see temperatures peak north of the equator at approximately 20 degrees latitude.</p>
                         <!-- <br> -->
-                        <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, windspeed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+                        <!-- <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, windspeed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p> -->
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-5">
                     <div id="viz">
                         <h3>Visualizations</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
                         <div class = "row" id = "top-row">
                             <div class="col-sm-6">
-                                <img src = "C:\Users\mckin\Desktop\repos\HW12_HTML\images\tempFig.png" alt="Image of temperature graph" class="vizGraphs">
+                                <a href="C:\Users\mckin\Desktop\repos\HW12_HTML\max_temp.html">
+                                    <img src = "C:\Users\mckin\Desktop\repos\HW12_HTML\images\tempFig.png" alt="Image of temperature graph" class="vizGraphs">
+                                </a>
                             </div>
                             <div class="col-sm-6">
-                                <img src = "C:\Users\mckin\Desktop\repos\HW12_HTML\images\humidityFig.png" alt="Image of temperature graph" class="vizGraphs">
+                                <a href="C:\Users\mckin\Desktop\repos\HW12_HTML\humidity.html">
+                                    <img src = "C:\Users\mckin\Desktop\repos\HW12_HTML\images\humidityFig.png" alt="Image of humidity graph" class="vizGraphs">
+                                </a>
                             </div>
                         </div>
                         <div class = "row" id="bottom-row">
                             <div class="col-sm-6">
-                                <img src = "C:\Users\mckin\Desktop\repos\HW12_HTML\images\cloudFig.png" alt="Image of temperature graph" class="vizGraphs">
+                                <a href="C:\Users\mckin\Desktop\repos\HW12_HTML\cloud.html">
+                                    <img src = "C:\Users\mckin\Desktop\repos\HW12_HTML\images\cloudFig.png" alt="Image of cloud graph" class="vizGraphs">
+                                </a>
                             </div>
                             <div class="col-sm-6">
-                                <img src = "C:\Users\mckin\Desktop\repos\HW12_HTML\images\windFig.png" alt="Image of temperature graph" class="vizGraphs">
+                                <a href="C:\Users\mckin\Desktop\repos\HW12_HTML\max_temp.html">
+                                    <img src = "C:\Users\mckin\Desktop\repos\HW12_HTML\images\windFig.png" alt="Image of wind graph" class="vizGraphs">
+                                </a>
                             </div>
                         </div>
                     </div>
